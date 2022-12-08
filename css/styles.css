@@ -27,9 +27,9 @@ h1 {
     font-size: 55px;
     font-family:'Shrikhand', cursive;
     margin: 0;
-    /* come back to add this with a navbar at the top once you're done learning the course 
+    background-color: #7785ac;
     position: sticky;
-    top: 10px; */
+    top: 0px;
 }
 
 h2 {
@@ -74,9 +74,20 @@ body {
     max-width: 900px;
     width: 85%;
     margin: 0 auto;
+}
+.content-wrap .header {
+    padding-bottom: 60px 0px 5px 0px;
+}
+.content-wrap .projects {
     padding: 60px 0;
 }
-
+.content-wrap .work-experience {
+    padding: 60px 0;
+}
+.content-wrap .education {
+    padding: 60px 0;
+}
+.content-wrap
 /* IMAGE STYLES
 ---------------------------------- */
 img {
@@ -118,7 +129,9 @@ a:active {
 ---------------------------------- */
 header {
     background-color: #7785ac;
+    padding-bottom: 5px;
 }
+
 /* PROJECTS
 ---------------------------------- */
 .projects {
