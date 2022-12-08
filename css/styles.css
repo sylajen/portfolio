@@ -1,0 +1,213 @@
+/* PALETTE
+Persian Indigo:     #360568
+KSU Purple:         #5b2a86
+Shadow Blue:        #7785ac
+Opal:               #9ac6c5
+Celadon:            #a5e6ba
+*/
+
+
+/* GLOBAL STYLES
+---------------------------------- */
+/* html & *, *:befpre, *:after should be added to all
+CSS stylesheets to fix box sizing issues */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: #360568;
+    font-size: 55px;
+    font-family:'Shrikhand', cursive;
+    margin: 0;
+    /* come back to add this with a navbar at the top once you're done learning the course 
+    position: sticky;
+    top: 10px; */
+}
+
+h2 {
+    color: #360568;
+    margin: 0;
+    font-family: 'Shrikhand', cursive;
+}
+
+h3 {
+    color: #5b2a86;
+    margin-bottom: 0;
+}
+
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px solid #5b2a86;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-style: none;
+}
+
+section {
+    padding: 5px;
+    /* border: 50px #707070 !important; not working for some reason */
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5b2a86;
+    background-color: #7785ac;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* IMAGE STYLES
+---------------------------------- */
+img {
+    width: 300px;
+    padding: 10px;
+}
+.spacestagram {
+    padding: 20px 20px 20px 10px; /* top right bottom left; clockwise */
+}
+ 
+/* LINKS
+---------------------------------- */
+/* Link Colour when a:link selector isn't added; a generic link selector */
+a {
+    text-decoration-line: none;
+}
+/* Default state for links */
+a:link {
+    color: #360568;
+}
+/* Visited state for links */
+/* a:visited {
+    color: #a5e6ba;
+} */
+/* When the link is being right clicked and it is focused */
+a:focus {
+    color: darkorchid;
+}
+/* When a cursor hovers over the link */
+a:hover {
+    color: #e1d3ed;
+}
+/* While the mouse is clicked and held on the link */
+a:active {
+    color: white; 
+}
+
+/* PROFILE
+---------------------------------- */
+header {
+    background-color: #7785ac;
+}
+/* PROJECTS
+---------------------------------- */
+.projects {
+    background-color: #9ac6c5;
+}
+.projects .btn {
+    background: #7785ac;
+    color: #360568;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background:  #360568;
+    color: #7785ac;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* .project-item img {
+    float: left;
+    margin: 20px;
+}
+.project-item h3 {
+    padding: 0;
+} */
+
+/* WORK EXPERIENCE
+---------------------------------- */
+.work-experience {
+    background-color: #7785ac;
+}
+
+/* EDUCATION
+---------------------------------- */
+.education {
+    background-image: url(../images/gear-background.png);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 70%;
+}
+
+/* FOOTER
+---------------------------------- */
+footer {
+    background-color: #7785ac;
+}
+.contact-list{
+    list-style: none;
+    padding-left: 0px;
+
+}
+.contact-list a {
+    display: inline-block;
+    padding: 15px;
+}
+
+/* RESPONSIVE STYLES
+---------------------------------- */
+@media screen and (min-width: 750px) {
+    footer {
+        text-align: center;
+    }
+    .project-item {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 35px;
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
