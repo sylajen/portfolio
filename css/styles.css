@@ -74,20 +74,13 @@ body {
     max-width: 900px;
     width: 85%;
     margin: 0 auto;
+    padding: 20px;
 }
 .content-wrap .header {
-    padding-bottom: 60px 0px 5px 0px;
+    padding-top: 60px;
+    padding-bottom: 10px;
 }
-.content-wrap .projects {
-    padding: 60px 0;
-}
-.content-wrap .work-experience {
-    padding: 60px 0;
-}
-.content-wrap .education {
-    padding: 60px 0;
-}
-.content-wrap
+
 /* IMAGE STYLES
 ---------------------------------- */
 img {
